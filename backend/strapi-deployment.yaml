@@ -98,7 +98,7 @@ spec:
                   key: PORT
                   name: env
           image: mystrapi:latest
-          name: strapi
+          name: 382821822752.dkr.ecr.us-east-1.amazonaws.com/steppingblocks-cms:latest
           ports:
             - containerPort: 1337
           resources: {}

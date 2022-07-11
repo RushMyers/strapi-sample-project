@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: steppingblocks-cms-backend
+spec:
+  selector:
+    matchLabels:
+      app: steppingblocks-cms
+      component: backend
+  template:
+    metadata:
+      labels:
+        app: steppingblocks-cms
+        component: backend
+    spec:
+      containers:
+      - name: steppingblocks-cms-api
+        image: 382821822752.dkr.ecr.us-east-1.amazonaws.com/steppingblocks-cms:latest
+        ports:
+          - containerPort: 1337
